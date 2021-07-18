@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bmicalculator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp"
+        android:background="@color/black"
+
+        android:fontFamily="@font/poppinsbold"
+        android:text="BMI CALCULATOR"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText"
+        android:gravity="center_horizontal" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        tools:ignore="ExtraText">
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="256dp"
+            android:layout_height="55dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="@string/string1"
+            android:layout_marginEnd="1dp"
+            android:textColor="#F1EFEF"
+            android:textSize="30sp"
+            android:layout_marginRight="1dp" />
+
+        <EditText
+            android:id="@+id/edWeg"
+            android:layout_width="120dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="0dp"
+            android:background="#F5F8F1"
+            android:gravity="center"
+            android:hint="@string/string3"
+            android:textColorHint="@color/black"
+            android:inputType="numberSigned"
+            android:textColor="#090808"
+            android:textSize="25sp"
+            android:layout_marginLeft="0dp"
+            android:autofillHints="" />
+
+
+        >
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="256dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="1dp"
+            android:fontFamily="@font/poppinsbold"
+
+            android:text="@string/string"
+            android:textColor="#F7F5F5"
+            android:textSize="30sp"
+            android:layout_marginRight="1dp" />
+
+        <EditText
+            android:id="@+id/edHei"
+            android:layout_width="120dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="80dp"
+            android:textColorHint="@color/black"
+            android:autofillHints=""
+            android:background="#ffff"
+            android:gravity="center"
+            android:hint="@string/string4"
+            android:inputType="numberSigned"
+            android:textSize="25sp" />
+
+        >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtInter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/string5"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txtRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/string7"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnRes"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:text="RESULT"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinsbold"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FFFFFF"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnReset"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="40dp"
+            android:clickable="true"
+            android:fontFamily="@font/poppinsbold"
+            android:focusable="true"
+            android:text="@string/string6"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:backgroundTint="#FFFFFF"
+            android:layout_marginStart="40dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        app:srcCompat="@drawable/bmiii"
+        android:contentDescription="@string/todo" />
+</LinearLayout>
+
